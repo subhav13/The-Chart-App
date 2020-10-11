@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">APMC</string>
+    <string name="try_again">बाद में फिर से प्रयास करें</string>
+    <string name="server_error">सर्वर त्रुटि</string>
+    <string name="see_city_by_city">"शहरों का विश्लेषण करें "</string>
+    <string name="onion_prices">प्याज की कीमत, </string>
+    <string name="per_100_kg">( प्रति 100 किलो )</string>
+    <string name="compare_apmc_market_prices">एपीएमसी बाजार की कीमतों की तुलना करें</string>
+    <string name="choose_two">तुलना करने के लिए किसी भी 2 एपीएमसी केंद्र चुनें</string>
+    <string name="ok">आगे बढ़ना</string>
+    <string name="clearAll">सभी साफ करें</string>
+    <string name="select_atleast_2">कम से कम 2 एपीएमसी केंद्रों का चयन करें</string>
+    <string name="comparision_btn">के बीच तुलना</string>
+    <string name="avg_ann_cost">औसत वार्षिक लागत में</string>
+    <string name="apmc_prices">एपीएमसी की कीमतें</string>
+    <string name="limit_reached">केवल दो केंद्रों का चयन कर सकते हैं</string>
+</resources>

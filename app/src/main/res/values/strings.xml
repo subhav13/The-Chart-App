@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name" translatable="false">APMC</string>
+    <string name="try_again">Try again later</string>
+    <string name="server_error">Server Error</string>
+    <string name="state_name_comes_here" translatable="false">State Name Comes Here</string>
+    <string name="see_city_by_city">Analyse Cities </string>
+    <string name="onion_prices">Onion Prices, </string>
+    <string name="per_100_kg">( Per 100 kg )</string>
+    <string name="compare_apmc_market_prices">Compare APMC market prices</string>
+    <string name="choose_two">Choose any 2 APMC centers to compare</string>
+    <string name="ok">Proceed</string>
+    <string name="clearAll">Clear All</string>
+    <string name="close" translatable="false">Close</string>
+    <string name="mainCB" translatable="false">main</string>
+    <string name="select_atleast_2">Select At least 2 APMC Centers</string>
+    <string name="comparision_btn">Comparison between </string>
+    <string name="avg_ann_cost">Average Annual Cost in </string>
+    <string name="apmc_prices">APMC PRICES</string>
+    <string name="select_preferred_language" translatable="false">Select Preferred Language/पसंदीदा भाषा का चयन करें</string>
+    <string name="hindi" translatable="false">हिंदी</string>
+    <string name="eng" translatable="false">English</string>
+    <string name="limit_reached">Can only select two centers</string>
+    <string name="yearly">Yearly</string>
+    <string name="six_months">Last 6 Months</string>
+    <string name="this_month">This Month</string>
+</resources>

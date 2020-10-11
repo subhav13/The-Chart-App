@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/state_name_comes_here"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:fontFamily= "@font/aldrich"
+            android:id="@+id/city_name"
+            app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_up_24" />
+
+
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="350dp"
+            android:id="@+id/chart"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_parent"
+            android:padding="10dp"
+            android:gravity="end"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:text="@string/yearly"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:fontFamily="@font/aldrich"
+                android:textAllCaps="false"
+                android:id="@+id/yearly"
+                android:padding="6dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/text_bg3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:text="@string/six_months"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/aldrich"
+                android:gravity="center"
+
+                android:textAllCaps="false"
+                android:id="@+id/six_months"
+                android:layout_marginEnd="5dp"
+                android:padding="8dp"
+                android:background="@drawable/text_bg3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:text="@string/this_month"
+                android:gravity="center"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/aldrich"
+                android:textAllCaps="false"
+                android:padding="5dp"
+                android:id="@+id/this_month"
+                android:background="@drawable/text_bg3"/>
+
+        </LinearLayout>
+
+
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/chart2"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

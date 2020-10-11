@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.CompareActivity">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/maintoolbar"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:elevation="0dp">
+
+            <ImageView
+                android:id="@+id/tv_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/farmigo" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comparison between\nthis and this ( Per 100 kg ) "
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/aldrich"
+        android:id="@+id/compareBetween"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_fullscreen_24"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/fullScreen"
+            tools:ignore="ContentDescription" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:id="@+id/parent"
+            android:layout_height="525dp">
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/chart"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Average Annual Prices in Mumbai\n\n 2000"
+            android:gravity="center"
+            android:id="@+id/city1"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="15sp"
+            android:fontFamily="@font/aldrich"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Average Annual Prices in Bhopal\n\n 2000"
+            android:gravity="center"
+            android:id="@+id/city2"
+            android:textColor="#1400CC"
+            android:textSize="15sp"
+            android:fontFamily="@font/aldrich"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

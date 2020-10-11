@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:orientation="vertical"
+    android:minWidth="400dp"
+    android:padding="10dp"
+    android:background="@drawable/curved_transp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:layout_gravity="end"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_cancel_24"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_two"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="20sp"
+        android:fontFamily="@font/aldrich"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold|italic"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="350dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:id="@+id/checkbox" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/clearAll"
+            android:background="@drawable/text_bg"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/clear"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:background="@drawable/text_bg"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:id="@+id/ok"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
